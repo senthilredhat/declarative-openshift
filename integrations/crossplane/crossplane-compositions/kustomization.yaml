@@ -10,8 +10,8 @@ helmCharts:
 - name: cluster-role
   valuesFile: values.yaml
 
-- name: prerequsite-networks
-  valuesFile: values.yaml
+# - name: prerequsite-networks
+#   valuesFile: values.yaml
   
 #- name: rosa
 #  valuesFile: values.yaml
