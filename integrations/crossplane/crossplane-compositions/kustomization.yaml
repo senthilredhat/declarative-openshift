@@ -6,9 +6,9 @@ kind: Kustomization
 helmGlobals:
   chartHome: ./
 
-helmCharts:
-- name: cluster-role
-  valuesFile: values.yaml
+#helmCharts:
+# - name: cluster-role
+#   valuesFile: values.yaml
 
 # - name: prerequsite-networks
 #   valuesFile: values.yaml
