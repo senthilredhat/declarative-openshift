@@ -366,13 +366,6 @@ spec:
         value: /etc/kustomize/plugin
       - name: CLUSTER_NAME
         value: '${cluster_name}'
-      - name: CLUSTER_BASE_DOMAIN
-        value: '${cluster_base_domain}'
-      # all created clusters base domain should be <cluster-name>.<PLATFORM_BASE_DOMAIN> 
-      - name: PLATFORM_BASE_DOMAIN
-        value: '${platform_base_domain}'
-      - name: CLUSTER_BASE_DOMAIN
-        value: '${cluster_base_domain}'
       - name: INFRA_GITOPS_REPO
         value: '${gitops_repo}'    
     sidecarContainers:
@@ -383,13 +376,6 @@ spec:
             value: /etc/kustomize/plugin
           - name: CLUSTER_NAME
             value: '${cluster_name}'
-          - name: CLUSTER_BASE_DOMAIN
-            value: '${cluster_base_domain}'
-          # all created clusters base domain should be <cluster-name>.<PLATFORM_BASE_DOMAIN> 
-          - name: PLATFORM_BASE_DOMAIN
-            value: '${platform_base_domain}'
-          - name: CLUSTER_BASE_DOMAIN
-            value: '${cluster_base_domain}'
           - name: INFRA_GITOPS_REPO
             value: '${gitops_repo}'                                    
         # image: quay.io/gnunn/tools:latest
